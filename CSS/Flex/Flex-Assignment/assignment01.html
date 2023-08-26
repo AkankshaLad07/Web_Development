@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+		margin:10px;
+		padding:10px;
+		background-color:lightcyan;
+		border:5px solid black;
+        }
+        header{
+		border: 2px solid navy;
+           	margin: 5px;
+            	padding: 3px;
+            	background-image:linear-gradient(to right,indigo,hotpink,indigo);
+            	display: flex;
+		font-family:sans-serif;
+		justify-content:center;
+        }
+        nav{
+            	display: flex;
+            	justify-content: flex-end;
+            	padding:1rem;
+            	background-color: linen;
+            	border: 2px solid navy;
+		margin:5px;
+        }
+        nav>div{
+            	margin:0px 10px;  
+            	padding: 8px;
+            	text-decoration: none;
+        }
+	a{
+		color: maroon;
+	}
+        main{
+            	display:flex;
+          	background-color:tan;
+            	border: 2px solid black;
+            	padding:5px;
+		margin:5px;
+        }
+        main>div{
+            	flex-grow:1;
+            	border:2px solid indigo;
+            	height:300px;
+            	margin: 5px;
+            	background-color: tan;
+        }
+        .grow-div{
+            	flex-grow:3;
+        }
+	  section{
+		border:2px solid navy;
+		margin:5px;
+		height:100%;
+		padding:5px;
+		background-color:purple;
+		display:flex;	
+	  }
+	 section>div{
+		border:2px solid hotpink;
+		height:100%;
+		flex-grow:1;
+		margin:5px;
+	}	
+	.main-div{
+	 	flex-grow:1;
+		width:100px;
+	}
+	.main-div>div{
+		margin:10px;
+		height:150px;
+		border:2px solid skyblue;
+		background-color:silver;
+		justify-content:center;
+	}
+	nav>div:hover{
+		background-color:silver;
+		box-shadow:0rem 0.1rem 0.2rem 0.1rem rgba(1,1,1,.7);
+		cursor:pointer;
+		border-radius:15px;
+	}
+    </style>
+</head>
+<body>
+   
+        <header>
+                <h1>Fork Infosystems</h1>
+        </header>
+        <nav>
+            <div><a href="#">Home</a></div>
+            <div><a href="#">About</a></div>
+            <div><a href="#">Contact Us</a></div>
+            <div><a href="#">Help</a></div>
+        </nav>
+        <main>
+            <div></div>
+            <div class="grow-div"></div>
+            <div></div>
+        </main>
+        <section>
+            <div class="main-div">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="main-div">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="main-div">
+                <div></div>
+                <div></div>
+            </div>
+	</section>
+</body>
+</html>

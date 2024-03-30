@@ -1,0 +1,29 @@
+<!doctype html>
+<html> 
+ <head> 
+  <title>Positive or Negative Number</title> 
+ </head> 
+ <body> 
+  <p>Enter Number : </p> 
+  <input type="text" id="N1"> 
+  <br>
+  <br> 
+  <input type="button" value="Output" onclick="FindOutput()"> 
+ 
+<script type="text/javascript" id="dcoder_script">function FindOutput()
+{
+  var a=parseInt(document.getElementById("N1"). value);
+  if(a ==0)
+  {
+    document.write(a +" Is Neutral Number. ");
+  }
+  else if(a > 0)
+  {
+     document.write(a +" Is Positive Number. ");
+  }
+  else
+  {
+     document.write(a +" Is Negative Number. ");
+  }
+  
+}</script></body></html>
